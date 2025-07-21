@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
         User::create([
             'username' => 'sajidan',
             'password' => bcrypt('sajidan'),
+            'address' => 'Tasikmalaya',
+            'phone' => '081563854329',
         ]);
     }
 }
