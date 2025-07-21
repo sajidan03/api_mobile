@@ -44,4 +44,12 @@ class AuthController extends Controller
     {
         return response()->json($request->user());
     }
+    public function profile(Request $request)   {
+        return response()->json(
+            [
+                'message'=> 'Profile loaded',
+                'user' => $request->user(),
+            ]
+        );
+    }
 }
